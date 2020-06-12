@@ -27,7 +27,7 @@ from nnpy.socket import ffi, nanomsg
 logger = logging.getLogger(__name__)
 
 EAGAIN = 11
-ENOPROTOOPT = 92
+ENOPROTOOPT = 42
 
 NN_MSG = ffi.cast('size_t', -1)
 
