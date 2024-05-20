@@ -18,6 +18,7 @@
 #
 
 import asyncio
+from errno import EAGAIN, ENOPROTOOPT
 import logging
 import nnpy
 
@@ -26,8 +27,6 @@ from nnpy.socket import ffi, nanomsg
 
 logger = logging.getLogger(__name__)
 
-EAGAIN = 11
-ENOPROTOOPT = 92
 
 NN_MSG = ffi.cast('size_t', -1)
 
